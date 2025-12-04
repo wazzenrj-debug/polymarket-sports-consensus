@@ -1064,12 +1064,7 @@ def generate_html_dashboard(matches: dict[str, Match], traders: list[Trader]) ->
         </div>
         
         <div class="matches-container" id="matches">
-            {match_cards_html if match_cards_html else '''
-            <div class="empty-state">
-                <h3>No matches found</h3>
-                <p>No sports positions meeting the criteria were found in the next 7 days.</p>
-            </div>
-            '''}
+            {match_cards_html if match_cards_html else '<div class="empty-state"><h3>No matches found</h3><p>No sports positions meeting the criteria were found in the next 7 days.</p></div>'}
         </div>
         
         <footer class="footer">
