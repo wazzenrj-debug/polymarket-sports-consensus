@@ -45,4 +45,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add docs/
           git diff --staged --quiet || git commit -m "Update dashboard - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main
           git push
