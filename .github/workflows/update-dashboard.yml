@@ -45,5 +45,9 @@ jobs:
           git config --local user.name "GitHub Action"
           git add docs/
           git diff --staged --quiet || git commit -m "Update dashboard - $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git pull --rebase origin main
+          
+          # Pull latest changes. If there is a conflict, force the use of 
+          # the new dashboard we just generated (-Xtheirs).
+          git pull --rebase -Xtheirs origin main
+          
           git push
