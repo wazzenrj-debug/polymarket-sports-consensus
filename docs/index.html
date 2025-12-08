@@ -55,6 +55,35 @@
             padding: 2rem;
         }
         
+        /* Navigation */
+        .nav {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+        
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            background: var(--bg-card);
+            color: var(--text-primary);
+        }
+        
+        .nav-link.active {
+            background: var(--accent-green-dim);
+            color: var(--accent-green);
+        }
+        
         /* Header */
         .header {
             text-align: center;
@@ -396,24 +425,29 @@
     <div class="noise-overlay"></div>
     
     <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="nav-link active">📊 Live Predictions</a>
+            <a href="analytics.html" class="nav-link">📈 Analytics</a>
+        </nav>
+        
         <header class="header">
             <div class="logo">⚡ Polymarket Intelligence</div>
             <h1>Sports Consensus Dashboard</h1>
             <p>Where the top 100 profitable traders are placing their bets</p>
-            <div class="generated-time">Generated: 2025-12-08 07:03:21 UTC</div>
+            <div class="generated-time">Generated: 2025-12-08 12:11:36 UTC</div>
         </header>
         
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-value">35</div>
+                <div class="stat-value">57</div>
                 <div class="stat-label">Active Matches</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">15</div>
+                <div class="stat-value">18</div>
                 <div class="stat-label">High Consensus (80%+)</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">$990,033</div>
+                <div class="stat-value">$1,395,648</div>
                 <div class="stat-label">Total Volume Tracked</div>
             </div>
             <div class="stat-card">
@@ -431,6 +465,60 @@
         
         <div class="matches-container" id="matches">
             
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Kings vs. Utah</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 24 top traders</span>
+                        <span class="total-volume">💰 $104,100 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/nhl-lak-utah-2025-12-09" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Utah</span>
+                    <span class="outcome-stats">12 traders · $29,250</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 28.097886062503918%;">
+                        <span class="volume-label">28.1% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Kings</span>
+                    <span class="outcome-stats">12 traders · $74,850</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 71.90211393749608%;">
+                        <span class="volume-label">71.9% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
         <div class="match-card">
             <div class="match-header">
                 <div class="match-info">
@@ -471,50 +559,50 @@
         <div class="match-card">
             <div class="match-header">
                 <div class="match-info">
-                    <h3 class="match-title">Kings vs. Utah</h3>
+                    <h3 class="match-title">Spurs vs. Pelicans</h3>
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
-                        <span class="trader-count">👥 16 top traders</span>
-                        <span class="total-volume">💰 $93,662 total</span>
+                        <span class="trader-count">👥 20 top traders</span>
+                        <span class="total-volume">💰 $92,936 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
-                    <span class="consensus-badge consensus-medium">Moderate Consensus (75%)</span>
-                    <a href="https://polymarket.com/event/nhl-lak-utah-2025-12-09" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                    <span class="consensus-badge consensus-medium">Moderate Consensus (60%)</span>
+                    <a href="https://polymarket.com/event/nba-sas-nop-2025-12-08" target="_blank" class="view-market-btn">View on Polymarket →</a>
                 </div>
             </div>
             <div class="outcomes">
                 
             <div class="outcome">
                 <div class="outcome-header">
-                    <span class="outcome-name consensus-pick">Utah</span>
-                    <span class="outcome-stats">12 traders · $24,655</span>
+                    <span class="outcome-name consensus-pick">Pelicans</span>
+                    <span class="outcome-stats">12 traders · $9,507</span>
                 </div>
                 <div class="bar-container">
-                    <div class="bar" style="width: 75.0%; background: #10b981;">
-                        <span class="bar-label">75.0%</span>
+                    <div class="bar" style="width: 60.0%; background: #10b981;">
+                        <span class="bar-label">60.0%</span>
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 26.323898177368864%;">
-                        <span class="volume-label">26.3% volume</span>
+                    <div class="volume-bar" style="width: 10.229696365681054%;">
+                        <span class="volume-label">10.2% volume</span>
                     </div>
                 </div>
             </div>
             
             <div class="outcome">
                 <div class="outcome-header">
-                    <span class="outcome-name ">Kings</span>
-                    <span class="outcome-stats">4 traders · $69,006</span>
+                    <span class="outcome-name ">Spurs</span>
+                    <span class="outcome-stats">8 traders · $83,429</span>
                 </div>
                 <div class="bar-container">
-                    <div class="bar" style="width: 25.0%; background: #6b7280;">
-                        <span class="bar-label">25.0%</span>
+                    <div class="bar" style="width: 40.0%; background: #6b7280;">
+                        <span class="bar-label">40.0%</span>
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 73.67610182263114%;">
-                        <span class="volume-label">73.7% volume</span>
+                    <div class="volume-bar" style="width: 89.77030363431895%;">
+                        <span class="volume-label">89.8% volume</span>
                     </div>
                 </div>
             </div>
@@ -525,24 +613,24 @@
         <div class="match-card">
             <div class="match-header">
                 <div class="match-info">
-                    <h3 class="match-title">Kings vs. Pacers</h3>
+                    <h3 class="match-title">Spread: Spurs (-9.5)</h3>
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 16 top traders</span>
-                        <span class="total-volume">💰 $55,235 total</span>
+                        <span class="total-volume">💰 $72,385 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
                     <span class="consensus-badge consensus-medium">Moderate Consensus (75%)</span>
-                    <a href="https://polymarket.com/event/nba-sac-ind-2025-12-08" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                    <a href="https://polymarket.com/event/nba-sas-nop-2025-12-08" target="_blank" class="view-market-btn">View on Polymarket →</a>
                 </div>
             </div>
             <div class="outcomes">
                 
             <div class="outcome">
                 <div class="outcome-header">
-                    <span class="outcome-name consensus-pick">Pacers</span>
-                    <span class="outcome-stats">12 traders · $49,878</span>
+                    <span class="outcome-name consensus-pick">Spurs</span>
+                    <span class="outcome-stats">12 traders · $68,523</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 75.0%; background: #10b981;">
@@ -550,16 +638,16 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 90.3016040136537%;">
-                        <span class="volume-label">90.3% volume</span>
+                    <div class="volume-bar" style="width: 94.66463755578782%;">
+                        <span class="volume-label">94.7% volume</span>
                     </div>
                 </div>
             </div>
             
             <div class="outcome">
                 <div class="outcome-header">
-                    <span class="outcome-name ">Kings</span>
-                    <span class="outcome-stats">4 traders · $5,357</span>
+                    <span class="outcome-name ">Pelicans</span>
+                    <span class="outcome-stats">4 traders · $3,862</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 25.0%; background: #6b7280;">
@@ -567,8 +655,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 9.698395986346307%;">
-                        <span class="volume-label">9.7% volume</span>
+                    <div class="volume-bar" style="width: 5.335362444212183%;">
+                        <span class="volume-label">5.3% volume</span>
                     </div>
                 </div>
             </div>
@@ -633,11 +721,156 @@
         <div class="match-card">
             <div class="match-header">
                 <div class="match-info">
+                    <h3 class="match-title">Spread: Spurs (-10.5)</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 16 top traders</span>
+                        <span class="total-volume">💰 $23,250 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-medium">Moderate Consensus (75%)</span>
+                    <a href="https://polymarket.com/event/nba-sas-nop-2025-12-08" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Spurs</span>
+                    <span class="outcome-stats">12 traders · $20,979</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 75.0%; background: #10b981;">
+                        <span class="bar-label">75.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 90.23535114794252%;">
+                        <span class="volume-label">90.2% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Pelicans</span>
+                    <span class="outcome-stats">4 traders · $2,270</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 25.0%; background: #6b7280;">
+                        <span class="bar-label">25.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 9.764648852057483%;">
+                        <span class="volume-label">9.8% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Kings vs. Pacers</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 16 top traders</span>
+                        <span class="total-volume">💰 $53,655 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/nba-sac-ind-2025-12-08" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Pacers</span>
+                    <span class="outcome-stats">8 traders · $47,865</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 89.20820604156518%;">
+                        <span class="volume-label">89.2% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Kings</span>
+                    <span class="outcome-stats">8 traders · $5,790</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 10.791793958434818%;">
+                        <span class="volume-label">10.8% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Spread: FC Barcelona (-2.5)</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 12 top traders</span>
+                        <span class="total-volume">💰 $13,809 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-high">Strong Consensus (100%)</span>
+                    <a href="https://polymarket.com/event/ucl-fcb-fra-2025-12-09-more-markets" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Eintracht Frankfurt</span>
+                    <span class="outcome-stats">12 traders · $13,809</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 100.0%; background: #10b981;">
+                        <span class="bar-label">100.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 100.0%;">
+                        <span class="volume-label">100.0% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
                     <h3 class="match-title">Will Real Madrid CF win on 2025-12-14?</h3>
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 14, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 12 top traders</span>
-                        <span class="total-volume">💰 $13,923 total</span>
+                        <span class="total-volume">💰 $13,516 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -650,7 +883,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">12 traders · $13,923</span>
+                    <span class="outcome-stats">12 traders · $13,516</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 100.0%; background: #10b981;">
@@ -711,7 +944,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 12 top traders</span>
-                        <span class="total-volume">💰 $224,070 total</span>
+                        <span class="total-volume">💰 $249,230 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -724,7 +957,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">Yes</span>
-                    <span class="outcome-stats">8 traders · $217,149</span>
+                    <span class="outcome-stats">8 traders · $243,287</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 66.66666666666666%; background: #10b981;">
@@ -732,8 +965,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 96.91123582740012%;">
-                        <span class="volume-label">96.9% volume</span>
+                    <div class="volume-bar" style="width: 97.61544787829556%;">
+                        <span class="volume-label">97.6% volume</span>
                     </div>
                 </div>
             </div>
@@ -741,7 +974,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name ">No</span>
-                    <span class="outcome-stats">4 traders · $6,921</span>
+                    <span class="outcome-stats">4 traders · $5,943</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 33.33333333333333%; background: #6b7280;">
@@ -749,8 +982,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 3.0887641725998827%;">
-                        <span class="volume-label">3.1% volume</span>
+                    <div class="volume-bar" style="width: 2.3845521217044436%;">
+                        <span class="volume-label">2.4% volume</span>
                     </div>
                 </div>
             </div>
@@ -765,7 +998,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 10, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 12 top traders</span>
-                        <span class="total-volume">💰 $210,244 total</span>
+                        <span class="total-volume">💰 $211,220 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -778,7 +1011,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">Yes</span>
-                    <span class="outcome-stats">8 traders · $201,244</span>
+                    <span class="outcome-stats">8 traders · $203,420</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 66.66666666666666%; background: #10b981;">
@@ -786,8 +1019,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 95.71925870276458%;">
-                        <span class="volume-label">95.7% volume</span>
+                    <div class="volume-bar" style="width: 96.3071603620606%;">
+                        <span class="volume-label">96.3% volume</span>
                     </div>
                 </div>
             </div>
@@ -795,7 +1028,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name ">No</span>
-                    <span class="outcome-stats">4 traders · $9,000</span>
+                    <span class="outcome-stats">4 traders · $7,800</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 33.33333333333333%; background: #6b7280;">
@@ -803,8 +1036,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 4.28074129723543%;">
-                        <span class="volume-label">4.3% volume</span>
+                    <div class="volume-bar" style="width: 3.69283963793939%;">
+                        <span class="volume-label">3.7% volume</span>
                     </div>
                 </div>
             </div>
@@ -819,7 +1052,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 10, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 12 top traders</span>
-                        <span class="total-volume">💰 $30,972 total</span>
+                        <span class="total-volume">💰 $31,592 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -832,7 +1065,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">8 traders · $21,635</span>
+                    <span class="outcome-stats">8 traders · $22,492</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 66.66666666666666%; background: #10b981;">
@@ -840,8 +1073,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 69.85257833864192%;">
-                        <span class="volume-label">69.9% volume</span>
+                    <div class="volume-bar" style="width: 71.19301969819895%;">
+                        <span class="volume-label">71.2% volume</span>
                     </div>
                 </div>
             </div>
@@ -849,7 +1082,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name ">Yes</span>
-                    <span class="outcome-stats">4 traders · $9,337</span>
+                    <span class="outcome-stats">4 traders · $9,101</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 33.33333333333333%; background: #6b7280;">
@@ -857,8 +1090,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 30.147421661358077%;">
-                        <span class="volume-label">30.1% volume</span>
+                    <div class="volume-bar" style="width: 28.806980301801033%;">
+                        <span class="volume-label">28.8% volume</span>
                     </div>
                 </div>
             </div>
@@ -873,7 +1106,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 12 top traders</span>
-                        <span class="total-volume">💰 $14,267 total</span>
+                        <span class="total-volume">💰 $18,453 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -886,7 +1119,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">8 traders · $4,503</span>
+                    <span class="outcome-stats">8 traders · $8,689</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 66.66666666666666%; background: #10b981;">
@@ -894,8 +1127,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 31.56241172355157%;">
-                        <span class="volume-label">31.6% volume</span>
+                    <div class="volume-bar" style="width: 47.087718100749534%;">
+                        <span class="volume-label">47.1% volume</span>
                     </div>
                 </div>
             </div>
@@ -911,8 +1144,116 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 68.43758827644842%;">
-                        <span class="volume-label">68.4% volume</span>
+                    <div class="volume-bar" style="width: 52.91228189925048%;">
+                        <span class="volume-label">52.9% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Will Chelsea FC win on 2025-12-09?</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 12 top traders</span>
+                        <span class="total-volume">💰 $17,122 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-medium">Moderate Consensus (67%)</span>
+                    <a href="https://polymarket.com/event/ucl-ata-cfc1-2025-12-09" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">No</span>
+                    <span class="outcome-stats">8 traders · $13,650</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 66.66666666666666%; background: #10b981;">
+                        <span class="bar-label">66.7%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 79.72128072785065%;">
+                        <span class="volume-label">79.7% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Yes</span>
+                    <span class="outcome-stats">4 traders · $3,472</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 33.33333333333333%; background: #6b7280;">
+                        <span class="bar-label">33.3%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 20.27871927214934%;">
+                        <span class="volume-label">20.3% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Kings vs. Pacers: O/U 234.5</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 12 top traders</span>
+                        <span class="total-volume">💰 $16,731 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-medium">Moderate Consensus (67%)</span>
+                    <a href="https://polymarket.com/event/nba-sac-ind-2025-12-08" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Over</span>
+                    <span class="outcome-stats">8 traders · $12,910</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 66.66666666666666%; background: #10b981;">
+                        <span class="bar-label">66.7%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 77.16192881785615%;">
+                        <span class="volume-label">77.2% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Under</span>
+                    <span class="outcome-stats">4 traders · $3,821</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 33.33333333333333%; background: #6b7280;">
+                        <span class="bar-label">33.3%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 22.838071182143853%;">
+                        <span class="volume-label">22.8% volume</span>
                     </div>
                 </div>
             </div>
@@ -927,7 +1268,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 13, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 12 top traders</span>
-                        <span class="total-volume">💰 $6,863 total</span>
+                        <span class="total-volume">💰 $10,525 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -940,7 +1281,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">8 traders · $6,051</span>
+                    <span class="outcome-stats">8 traders · $6,441</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 66.66666666666666%; background: #10b981;">
@@ -948,8 +1289,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 88.17072471447788%;">
-                        <span class="volume-label">88.2% volume</span>
+                    <div class="volume-bar" style="width: 61.19542710119613%;">
+                        <span class="volume-label">61.2% volume</span>
                     </div>
                 </div>
             </div>
@@ -957,7 +1298,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name ">Yes</span>
-                    <span class="outcome-stats">4 traders · $812</span>
+                    <span class="outcome-stats">4 traders · $4,084</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 33.33333333333333%; background: #6b7280;">
@@ -965,8 +1306,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 11.829275285522105%;">
-                        <span class="volume-label">11.8% volume</span>
+                    <div class="volume-bar" style="width: 38.804572898803876%;">
+                        <span class="volume-label">38.8% volume</span>
                     </div>
                 </div>
             </div>
@@ -981,7 +1322,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 12 top traders</span>
-                        <span class="total-volume">💰 $5,842 total</span>
+                        <span class="total-volume">💰 $5,902 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -994,7 +1335,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">8 traders · $4,152</span>
+                    <span class="outcome-stats">8 traders · $4,211</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 66.66666666666666%; background: #10b981;">
@@ -1002,8 +1343,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 71.06838924252385%;">
-                        <span class="volume-label">71.1% volume</span>
+                    <div class="volume-bar" style="width: 71.35998113084511%;">
+                        <span class="volume-label">71.4% volume</span>
                     </div>
                 </div>
             </div>
@@ -1019,8 +1360,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 28.93161075747615%;">
-                        <span class="volume-label">28.9% volume</span>
+                    <div class="volume-bar" style="width: 28.640018869154904%;">
+                        <span class="volume-label">28.6% volume</span>
                     </div>
                 </div>
             </div>
@@ -1035,7 +1376,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 14, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 12 top traders</span>
-                        <span class="total-volume">💰 $5,531 total</span>
+                        <span class="total-volume">💰 $5,812 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1048,7 +1389,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">Chiefs</span>
-                    <span class="outcome-stats">8 traders · $2,683</span>
+                    <span class="outcome-stats">8 traders · $2,922</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 66.66666666666666%; background: #10b981;">
@@ -1056,8 +1397,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 48.50076815965323%;">
-                        <span class="volume-label">48.5% volume</span>
+                    <div class="volume-bar" style="width: 50.27868683731727%;">
+                        <span class="volume-label">50.3% volume</span>
                     </div>
                 </div>
             </div>
@@ -1065,7 +1406,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name ">Chargers</span>
-                    <span class="outcome-stats">4 traders · $2,848</span>
+                    <span class="outcome-stats">4 traders · $2,890</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 33.33333333333333%; background: #6b7280;">
@@ -1073,8 +1414,62 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 51.49923184034677%;">
-                        <span class="volume-label">51.5% volume</span>
+                    <div class="volume-bar" style="width: 49.72131316268275%;">
+                        <span class="volume-label">49.7% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Lightning vs. Maple Leafs: O/U 6.5</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 12 top traders</span>
+                        <span class="total-volume">💰 $3,302 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-medium">Moderate Consensus (67%)</span>
+                    <a href="https://polymarket.com/event/nhl-tb-tor-2025-12-09" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Over</span>
+                    <span class="outcome-stats">8 traders · $2,727</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 66.66666666666666%; background: #10b981;">
+                        <span class="bar-label">66.7%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 82.58494466042248%;">
+                        <span class="volume-label">82.6% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Under</span>
+                    <span class="outcome-stats">4 traders · $575</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 33.33333333333333%; background: #6b7280;">
+                        <span class="bar-label">33.3%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 17.415055339577524%;">
+                        <span class="volume-label">17.4% volume</span>
                     </div>
                 </div>
             </div>
@@ -1089,7 +1484,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ TBD</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $70,681 total</span>
+                        <span class="total-volume">💰 $70,931 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1102,7 +1497,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">8 traders · $70,681</span>
+                    <span class="outcome-stats">8 traders · $70,931</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 100.0%; background: #10b981;">
@@ -1122,24 +1517,98 @@
         <div class="match-card">
             <div class="match-header">
                 <div class="match-info">
-                    <h3 class="match-title">Kings vs. Pacers: O/U 234.5</h3>
+                    <h3 class="match-title">Will the price of Bitcoin be above $100,000 on December 9?</h3>
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $6,783 total</span>
+                        <span class="total-volume">💰 $31,354 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
                     <span class="consensus-badge consensus-high">Strong Consensus (100%)</span>
-                    <a href="https://polymarket.com/event/nba-sac-ind-2025-12-08" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                    <a href="https://polymarket.com/event/bitcoin-above-on-december-9" target="_blank" class="view-market-btn">View on Polymarket →</a>
                 </div>
             </div>
             <div class="outcomes">
                 
             <div class="outcome">
                 <div class="outcome-header">
-                    <span class="outcome-name consensus-pick">Over</span>
-                    <span class="outcome-stats">8 traders · $6,783</span>
+                    <span class="outcome-name consensus-pick">No</span>
+                    <span class="outcome-stats">8 traders · $31,354</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 100.0%; background: #10b981;">
+                        <span class="bar-label">100.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 100.0%;">
+                        <span class="volume-label">100.0% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Will Leeds United FC win on 2025-12-14?</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 14, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $22,571 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-high">Strong Consensus (100%)</span>
+                    <a href="https://polymarket.com/event/epl-bre-lee-2025-12-14" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">No</span>
+                    <span class="outcome-stats">8 traders · $22,571</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 100.0%; background: #10b981;">
+                        <span class="bar-label">100.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 100.0%;">
+                        <span class="volume-label">100.0% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Lightning vs. Maple Leafs</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $14,404 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-high">Strong Consensus (100%)</span>
+                    <a href="https://polymarket.com/event/nhl-tb-tor-2025-12-09" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Maple Leafs</span>
+                    <span class="outcome-stats">8 traders · $14,404</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 100.0%; background: #10b981;">
@@ -1196,48 +1665,11 @@
         <div class="match-card">
             <div class="match-header">
                 <div class="match-info">
-                    <h3 class="match-title">Will Chelsea FC win on 2025-12-09?</h3>
-                    <div class="match-meta">
-                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
-                        <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $4,271 total</span>
-                    </div>
-                </div>
-                <div class="match-actions">
-                    <span class="consensus-badge consensus-high">Strong Consensus (100%)</span>
-                    <a href="https://polymarket.com/event/ucl-ata-cfc1-2025-12-09" target="_blank" class="view-market-btn">View on Polymarket →</a>
-                </div>
-            </div>
-            <div class="outcomes">
-                
-            <div class="outcome">
-                <div class="outcome-header">
-                    <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">8 traders · $4,271</span>
-                </div>
-                <div class="bar-container">
-                    <div class="bar" style="width: 100.0%; background: #10b981;">
-                        <span class="bar-label">100.0%</span>
-                    </div>
-                </div>
-                <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 100.0%;">
-                        <span class="volume-label">100.0% volume</span>
-                    </div>
-                </div>
-            </div>
-            
-            </div>
-        </div>
-        
-        <div class="match-card">
-            <div class="match-header">
-                <div class="match-info">
                     <h3 class="match-title">Will SK Slavia Praha win on 2025-12-09?</h3>
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $4,009 total</span>
+                        <span class="total-volume">💰 $4,036 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1250,7 +1682,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">8 traders · $4,009</span>
+                    <span class="outcome-stats">8 traders · $4,036</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 100.0%; background: #10b981;">
@@ -1274,7 +1706,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 10, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $3,590 total</span>
+                        <span class="total-volume">💰 $3,696 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1287,44 +1719,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">8 traders · $3,590</span>
-                </div>
-                <div class="bar-container">
-                    <div class="bar" style="width: 100.0%; background: #10b981;">
-                        <span class="bar-label">100.0%</span>
-                    </div>
-                </div>
-                <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 100.0%;">
-                        <span class="volume-label">100.0% volume</span>
-                    </div>
-                </div>
-            </div>
-            
-            </div>
-        </div>
-        
-        <div class="match-card">
-            <div class="match-header">
-                <div class="match-info">
-                    <h3 class="match-title">Spurs vs. Pelicans</h3>
-                    <div class="match-meta">
-                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
-                        <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $3,521 total</span>
-                    </div>
-                </div>
-                <div class="match-actions">
-                    <span class="consensus-badge consensus-high">Strong Consensus (100%)</span>
-                    <a href="https://polymarket.com/event/nba-sas-nop-2025-12-08" target="_blank" class="view-market-btn">View on Polymarket →</a>
-                </div>
-            </div>
-            <div class="outcomes">
-                
-            <div class="outcome">
-                <div class="outcome-header">
-                    <span class="outcome-name consensus-pick">Pelicans</span>
-                    <span class="outcome-stats">8 traders · $3,521</span>
+                    <span class="outcome-stats">8 traders · $3,696</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 100.0%; background: #10b981;">
@@ -1348,7 +1743,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $3,356 total</span>
+                        <span class="total-volume">💰 $3,326 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1361,7 +1756,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">8 traders · $3,356</span>
+                    <span class="outcome-stats">8 traders · $3,326</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 100.0%; background: #10b981;">
@@ -1385,7 +1780,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 13, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $2,535 total</span>
+                        <span class="total-volume">💰 $3,182 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1398,7 +1793,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">8 traders · $2,535</span>
+                    <span class="outcome-stats">8 traders · $3,182</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 100.0%; background: #10b981;">
@@ -1422,7 +1817,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $1,497 total</span>
+                        <span class="total-volume">💰 $2,702 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1435,7 +1830,81 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">8 traders · $1,497</span>
+                    <span class="outcome-stats">8 traders · $2,702</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 100.0%; background: #10b981;">
+                        <span class="bar-label">100.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 100.0%;">
+                        <span class="volume-label">100.0% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Spread: FC Bayern München (-1.5)</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $1,697 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-high">Strong Consensus (100%)</span>
+                    <a href="https://polymarket.com/event/ucl-bay-spo-2025-12-09-more-markets" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">FC Bayern München</span>
+                    <span class="outcome-stats">8 traders · $1,697</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 100.0%; background: #10b981;">
+                        <span class="bar-label">100.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 100.0%;">
+                        <span class="volume-label">100.0% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Will SSC Napoli win on 2025-12-10?</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 10, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $1,284 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-high">Strong Consensus (100%)</span>
+                    <a href="https://polymarket.com/event/ucl-ben-nap-2025-12-10" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">No</span>
+                    <span class="outcome-stats">8 traders · $1,284</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 100.0%; background: #10b981;">
@@ -1459,7 +1928,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 10, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $1,111 total</span>
+                        <span class="total-volume">💰 $1,117 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1472,7 +1941,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">8 traders · $1,111</span>
+                    <span class="outcome-stats">8 traders · $1,117</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 100.0%; background: #10b981;">
@@ -1529,65 +1998,11 @@
         <div class="match-card">
             <div class="match-header">
                 <div class="match-info">
-                    <h3 class="match-title">Will the price of Bitcoin be above $94,000 on December 9?</h3>
-                    <div class="match-meta">
-                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
-                        <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $28,304 total</span>
-                    </div>
-                </div>
-                <div class="match-actions">
-                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
-                    <a href="https://polymarket.com/event/bitcoin-above-on-december-9" target="_blank" class="view-market-btn">View on Polymarket →</a>
-                </div>
-            </div>
-            <div class="outcomes">
-                
-            <div class="outcome">
-                <div class="outcome-header">
-                    <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">4 traders · $24,516</span>
-                </div>
-                <div class="bar-container">
-                    <div class="bar" style="width: 50.0%; background: #10b981;">
-                        <span class="bar-label">50.0%</span>
-                    </div>
-                </div>
-                <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 86.61681722945957%;">
-                        <span class="volume-label">86.6% volume</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="outcome">
-                <div class="outcome-header">
-                    <span class="outcome-name ">Yes</span>
-                    <span class="outcome-stats">4 traders · $3,788</span>
-                </div>
-                <div class="bar-container">
-                    <div class="bar" style="width: 50.0%; background: #6b7280;">
-                        <span class="bar-label">50.0%</span>
-                    </div>
-                </div>
-                <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 13.383182770540444%;">
-                        <span class="volume-label">13.4% volume</span>
-                    </div>
-                </div>
-            </div>
-            
-            </div>
-        </div>
-        
-        <div class="match-card">
-            <div class="match-header">
-                <div class="match-info">
                     <h3 class="match-title">Spread: Seahawks (-10.5)</h3>
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 14, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $27,441 total</span>
+                        <span class="total-volume">💰 $32,366 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1600,7 +2015,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">Colts</span>
-                    <span class="outcome-stats">4 traders · $14,828</span>
+                    <span class="outcome-stats">4 traders · $19,627</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #10b981;">
@@ -1608,8 +2023,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 54.034646103494175%;">
-                        <span class="volume-label">54.0% volume</span>
+                    <div class="volume-bar" style="width: 60.639682627717406%;">
+                        <span class="volume-label">60.6% volume</span>
                     </div>
                 </div>
             </div>
@@ -1617,7 +2032,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name ">Seahawks</span>
-                    <span class="outcome-stats">4 traders · $12,613</span>
+                    <span class="outcome-stats">4 traders · $12,739</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #6b7280;">
@@ -1625,8 +2040,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 45.965353896505825%;">
-                        <span class="volume-label">46.0% volume</span>
+                    <div class="volume-bar" style="width: 39.36031737228259%;">
+                        <span class="volume-label">39.4% volume</span>
                     </div>
                 </div>
             </div>
@@ -1641,7 +2056,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $25,804 total</span>
+                        <span class="total-volume">💰 $26,911 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1654,7 +2069,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">Magic</span>
-                    <span class="outcome-stats">4 traders · $24,701</span>
+                    <span class="outcome-stats">4 traders · $25,830</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #10b981;">
@@ -1662,8 +2077,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 95.72796139109174%;">
-                        <span class="volume-label">95.7% volume</span>
+                    <div class="volume-bar" style="width: 95.98483110273335%;">
+                        <span class="volume-label">96.0% volume</span>
                     </div>
                 </div>
             </div>
@@ -1671,7 +2086,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name ">Heat</span>
-                    <span class="outcome-stats">4 traders · $1,102</span>
+                    <span class="outcome-stats">4 traders · $1,081</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #6b7280;">
@@ -1679,8 +2094,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 4.2720386089082565%;">
-                        <span class="volume-label">4.3% volume</span>
+                    <div class="volume-bar" style="width: 4.01516889726664%;">
+                        <span class="volume-label">4.0% volume</span>
                     </div>
                 </div>
             </div>
@@ -1695,7 +2110,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 10, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $24,075 total</span>
+                        <span class="total-volume">💰 $24,223 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1708,7 +2123,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">4 traders · $13,980</span>
+                    <span class="outcome-stats">4 traders · $13,984</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #10b981;">
@@ -1716,8 +2131,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 58.06875071722142%;">
-                        <span class="volume-label">58.1% volume</span>
+                    <div class="volume-bar" style="width: 57.729495745763714%;">
+                        <span class="volume-label">57.7% volume</span>
                     </div>
                 </div>
             </div>
@@ -1725,7 +2140,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name ">Yes</span>
-                    <span class="outcome-stats">4 traders · $10,095</span>
+                    <span class="outcome-stats">4 traders · $10,239</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #6b7280;">
@@ -1733,8 +2148,62 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 41.93124928277858%;">
-                        <span class="volume-label">41.9% volume</span>
+                    <div class="volume-bar" style="width: 42.270504254236286%;">
+                        <span class="volume-label">42.3% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Will the price of Bitcoin be above $92,000 on December 9?</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $15,842 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/bitcoin-above-on-december-9" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">No</span>
+                    <span class="outcome-stats">4 traders · $8,505</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 53.68322054814788%;">
+                        <span class="volume-label">53.7% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Yes</span>
+                    <span class="outcome-stats">4 traders · $7,338</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 46.31677945185212%;">
+                        <span class="volume-label">46.3% volume</span>
                     </div>
                 </div>
             </div>
@@ -1749,7 +2218,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $14,229 total</span>
+                        <span class="total-volume">💰 $15,081 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1762,7 +2231,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">4 traders · $1,140</span>
+                    <span class="outcome-stats">4 traders · $720</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #10b981;">
@@ -1770,8 +2239,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 8.011969964494837%;">
-                        <span class="volume-label">8.0% volume</span>
+                    <div class="volume-bar" style="width: 4.7741636729898005%;">
+                        <span class="volume-label">4.8% volume</span>
                     </div>
                 </div>
             </div>
@@ -1779,7 +2248,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name ">Yes</span>
-                    <span class="outcome-stats">4 traders · $13,089</span>
+                    <span class="outcome-stats">4 traders · $14,361</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #6b7280;">
@@ -1787,8 +2256,62 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 91.98803003550516%;">
-                        <span class="volume-label">92.0% volume</span>
+                    <div class="volume-bar" style="width: 95.2258363270102%;">
+                        <span class="volume-label">95.2% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Will the price of Bitcoin be above $90,000 on December 12?</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 12, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $12,903 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/bitcoin-above-on-december-12" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Yes</span>
+                    <span class="outcome-stats">4 traders · $8,804</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 68.23129604953314%;">
+                        <span class="volume-label">68.2% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">No</span>
+                    <span class="outcome-stats">4 traders · $4,099</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 31.768703950466858%;">
+                        <span class="volume-label">31.8% volume</span>
                     </div>
                 </div>
             </div>
@@ -1803,7 +2326,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $8,719 total</span>
+                        <span class="total-volume">💰 $8,689 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1816,7 +2339,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">Yes</span>
-                    <span class="outcome-stats">4 traders · $7,912</span>
+                    <span class="outcome-stats">4 traders · $7,862</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #10b981;">
@@ -1824,8 +2347,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 90.74543052191149%;">
-                        <span class="volume-label">90.7% volume</span>
+                    <div class="volume-bar" style="width: 90.4868886269888%;">
+                        <span class="volume-label">90.5% volume</span>
                     </div>
                 </div>
             </div>
@@ -1833,7 +2356,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name ">No</span>
-                    <span class="outcome-stats">4 traders · $807</span>
+                    <span class="outcome-stats">4 traders · $827</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #6b7280;">
@@ -1841,8 +2364,386 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 9.254569478088527%;">
-                        <span class="volume-label">9.3% volume</span>
+                    <div class="volume-bar" style="width: 9.513111373011196%;">
+                        <span class="volume-label">9.5% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Bills vs. Patriots</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 14, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $8,539 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/nfl-buf-ne-2025-12-14" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Bills</span>
+                    <span class="outcome-stats">4 traders · $733</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 8.579731848597035%;">
+                        <span class="volume-label">8.6% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Patriots</span>
+                    <span class="outcome-stats">4 traders · $7,806</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 91.42026815140296%;">
+                        <span class="volume-label">91.4% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Will the price of Bitcoin be above $98,000 on December 10?</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 10, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $7,329 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/bitcoin-above-on-december-10" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">No</span>
+                    <span class="outcome-stats">4 traders · $6,676</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 91.08428251776601%;">
+                        <span class="volume-label">91.1% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Yes</span>
+                    <span class="outcome-stats">4 traders · $653</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 8.915717482233978%;">
+                        <span class="volume-label">8.9% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Kings vs. Pacers: O/U 235.5</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $7,248 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/nba-sac-ind-2025-12-08" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Over</span>
+                    <span class="outcome-stats">4 traders · $4,027</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 55.56727400887706%;">
+                        <span class="volume-label">55.6% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Under</span>
+                    <span class="outcome-stats">4 traders · $3,220</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 44.43272599112294%;">
+                        <span class="volume-label">44.4% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Will the price of Bitcoin be above $90,000 on December 9?</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $6,687 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/bitcoin-above-on-december-9" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Yes</span>
+                    <span class="outcome-stats">4 traders · $4,705</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 70.36087621806959%;">
+                        <span class="volume-label">70.4% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">No</span>
+                    <span class="outcome-stats">4 traders · $1,982</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 29.639123781930405%;">
+                        <span class="volume-label">29.6% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Will the price of Bitcoin be above $88,000 on December 10?</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 10, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $5,529 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/bitcoin-above-on-december-10" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Yes</span>
+                    <span class="outcome-stats">4 traders · $3,769</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 68.16973696024355%;">
+                        <span class="volume-label">68.2% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">No</span>
+                    <span class="outcome-stats">4 traders · $1,760</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 31.830263039756435%;">
+                        <span class="volume-label">31.8% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Brentford FC vs. Leeds United FC: O/U 2.5</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 14, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $4,719 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/epl-bre-lee-2025-12-14-more-markets" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Over</span>
+                    <span class="outcome-stats">4 traders · $3,717</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 78.77281831854863%;">
+                        <span class="volume-label">78.8% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Under</span>
+                    <span class="outcome-stats">4 traders · $1,002</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 21.227181681451366%;">
+                        <span class="volume-label">21.2% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Spurs vs. Pelicans: O/U 236.5</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $4,568 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/nba-sas-nop-2025-12-08" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Under</span>
+                    <span class="outcome-stats">4 traders · $4,112</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 90.00824281482916%;">
+                        <span class="volume-label">90.0% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Over</span>
+                    <span class="outcome-stats">4 traders · $456</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 9.991757185170838%;">
+                        <span class="volume-label">10.0% volume</span>
                     </div>
                 </div>
             </div>
@@ -1857,7 +2758,7 @@
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 14, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $4,149 total</span>
+                        <span class="total-volume">💰 $4,335 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -1870,7 +2771,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">No</span>
-                    <span class="outcome-stats">4 traders · $2,483</span>
+                    <span class="outcome-stats">4 traders · $2,652</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #10b981;">
@@ -1878,8 +2779,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 59.837008872901364%;">
-                        <span class="volume-label">59.8% volume</span>
+                    <div class="volume-bar" style="width: 61.17470741553662%;">
+                        <span class="volume-label">61.2% volume</span>
                     </div>
                 </div>
             </div>
@@ -1887,7 +2788,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name ">Yes</span>
-                    <span class="outcome-stats">4 traders · $1,666</span>
+                    <span class="outcome-stats">4 traders · $1,683</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #6b7280;">
@@ -1895,8 +2796,62 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 40.16299112709863%;">
-                        <span class="volume-label">40.2% volume</span>
+                    <div class="volume-bar" style="width: 38.82529258446338%;">
+                        <span class="volume-label">38.8% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Will Liverpool FC win on 2025-12-13?</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 13, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $3,889 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/epl-liv-bri-2025-12-13" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">No</span>
+                    <span class="outcome-stats">4 traders · $3,422</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 87.99434301877089%;">
+                        <span class="volume-label">88.0% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Yes</span>
+                    <span class="outcome-stats">4 traders · $467</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 12.005656981229105%;">
+                        <span class="volume-label">12.0% volume</span>
                     </div>
                 </div>
             </div>
@@ -1961,6 +2916,114 @@
         <div class="match-card">
             <div class="match-header">
                 <div class="match-info">
+                    <h3 class="match-title">Suns vs. Timberwolves: O/U 227.5</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 09, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $3,264 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/nba-phx-min-2025-12-08" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Over</span>
+                    <span class="outcome-stats">4 traders · $2,566</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 78.60631573774342%;">
+                        <span class="volume-label">78.6% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">Under</span>
+                    <span class="outcome-stats">4 traders · $698</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 21.393684262256592%;">
+                        <span class="volume-label">21.4% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Will Qarabağ Ağdam FK win on 2025-12-10?</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 10, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $2,081 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/ucl-qar-aja-2025-12-10" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Yes</span>
+                    <span class="outcome-stats">4 traders · $1,584</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 76.12017761374776%;">
+                        <span class="volume-label">76.1% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">No</span>
+                    <span class="outcome-stats">4 traders · $497</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 23.879822386252233%;">
+                        <span class="volume-label">23.9% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
                     <h3 class="match-title">Will Bologna FC 1909 win on 2025-12-14?</h3>
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 14, 2025 00:00 UTC</span>
@@ -2015,11 +3078,65 @@
         <div class="match-card">
             <div class="match-header">
                 <div class="match-info">
+                    <h3 class="match-title">Will BV Borussia 09 Dortmund win on 2025-12-10?</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 10, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $1,324 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/ucl-bvb1-bog1-2025-12-10" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">Yes</span>
+                    <span class="outcome-stats">4 traders · $708</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 53.47616153940478%;">
+                        <span class="volume-label">53.5% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">No</span>
+                    <span class="outcome-stats">4 traders · $616</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 46.523838460595215%;">
+                        <span class="volume-label">46.5% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
                     <h3 class="match-title">Will Club Atlético de Madrid win on 2025-12-13?</h3>
                     <div class="match-meta">
                         <span class="end-date">🗓️ Dec 13, 2025 00:00 UTC</span>
                         <span class="trader-count">👥 8 top traders</span>
-                        <span class="total-volume">💰 $1,204 total</span>
+                        <span class="total-volume">💰 $1,299 total</span>
                     </div>
                 </div>
                 <div class="match-actions">
@@ -2032,7 +3149,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name consensus-pick">Yes</span>
-                    <span class="outcome-stats">4 traders · $556</span>
+                    <span class="outcome-stats">4 traders · $548</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #10b981;">
@@ -2040,8 +3157,8 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 46.14189177861634%;">
-                        <span class="volume-label">46.1% volume</span>
+                    <div class="volume-bar" style="width: 42.22533761308694%;">
+                        <span class="volume-label">42.2% volume</span>
                     </div>
                 </div>
             </div>
@@ -2049,7 +3166,7 @@
             <div class="outcome">
                 <div class="outcome-header">
                     <span class="outcome-name ">No</span>
-                    <span class="outcome-stats">4 traders · $649</span>
+                    <span class="outcome-stats">4 traders · $750</span>
                 </div>
                 <div class="bar-container">
                     <div class="bar" style="width: 50.0%; background: #6b7280;">
@@ -2057,8 +3174,62 @@
                     </div>
                 </div>
                 <div class="volume-bar-container">
-                    <div class="volume-bar" style="width: 53.858108221383674%;">
-                        <span class="volume-label">53.9% volume</span>
+                    <div class="volume-bar" style="width: 57.77466238691304%;">
+                        <span class="volume-label">57.8% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div class="match-card">
+            <div class="match-header">
+                <div class="match-info">
+                    <h3 class="match-title">Spread: FC Bayern München (-2.5)</h3>
+                    <div class="match-meta">
+                        <span class="end-date">🗓️ Dec 14, 2025 00:00 UTC</span>
+                        <span class="trader-count">👥 8 top traders</span>
+                        <span class="total-volume">💰 $833 total</span>
+                    </div>
+                </div>
+                <div class="match-actions">
+                    <span class="consensus-badge consensus-low">Split Opinion (50%)</span>
+                    <a href="https://polymarket.com/event/bun-bay-mai-2025-12-14-more-markets" target="_blank" class="view-market-btn">View on Polymarket →</a>
+                </div>
+            </div>
+            <div class="outcomes">
+                
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name consensus-pick">1. FSV Mainz 05</span>
+                    <span class="outcome-stats">4 traders · $421</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #10b981;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 50.55910159811873%;">
+                        <span class="volume-label">50.6% volume</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="outcome">
+                <div class="outcome-header">
+                    <span class="outcome-name ">FC Bayern München</span>
+                    <span class="outcome-stats">4 traders · $412</span>
+                </div>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50.0%; background: #6b7280;">
+                        <span class="bar-label">50.0%</span>
+                    </div>
+                </div>
+                <div class="volume-bar-container">
+                    <div class="volume-bar" style="width: 49.44089840188127%;">
+                        <span class="volume-label">49.4% volume</span>
                     </div>
                 </div>
             </div>
